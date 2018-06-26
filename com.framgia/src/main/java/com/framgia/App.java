@@ -62,8 +62,7 @@ public class App
             return;
         }
 
-        //  For this example, let's do a simple HTTPS request:
-        String url = "https://www.ethereum.org/";
+        String url = "http://lumtest.com/myip.json";
 
         CkHttp http = new CkHttp();
 
@@ -71,8 +70,6 @@ public class App
         http.put_SocksHostname("localhost");
         http.put_SocksPort(1080);
         http.put_SocksVersion(5);
-        http.put_SocksUsername("chilkat123");
-        http.put_SocksPassword("password123");
 
         http.put_SendCookies(true);
         http.put_SaveCookies(true);
@@ -99,6 +96,5 @@ public class App
             System.out.println(tunnel.lastErrorText());
             return;
         }
-
     }
 }
